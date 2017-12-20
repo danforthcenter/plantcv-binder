@@ -1,0 +1,11 @@
+channels:
+  - defaults
+  - menpo
+dependencies:
+  - opencv=2.4.11
+  - pip
+    - matplotlib
+    - scipy
+    - scikit-image
+    - pytest
+    - pandas
