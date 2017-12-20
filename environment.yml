@@ -2,6 +2,7 @@ channels:
   - defaults
   - menpo
 dependencies:
+  - python=2.7
   - opencv=2.4.11
   - pip:
     - matplotlib
