@@ -16,3 +16,6 @@ RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
 
 RUN pip install --user --no-cache-dir notebook==5.*
+
+# Remove the PlantCV repo files to reduce the container size
+RUN rm -fr /tmp/plantcv
