@@ -1,4 +1,4 @@
-FROM danforthcenter/plantcv:btdchw79jqwr2yw3xmxhjfr
+FROM danforthcenter/plantcv:cd67a7d427b7
 
 ENV NB_USER jovyan
 ENV NB_UID 1000
