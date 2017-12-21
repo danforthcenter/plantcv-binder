@@ -15,4 +15,4 @@ USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
 
-RUN pip install --no-cache-dir notebook==5.*
+RUN pip install --user --no-cache-dir notebook==5.*
