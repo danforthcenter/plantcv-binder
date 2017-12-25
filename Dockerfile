@@ -14,7 +14,7 @@ WORKDIR $HOME
 RUN git clone https://github.com/danforthcenter/plantcv.git
 WORKDIR $HOME/plantcv
 
-RUN ls -l /opt/conda/
+RUN echo $PYTHONPATH
 
 # Install PlantCV Python prerequisites and PlantCV
 RUN pip install --no-cache-dir --quiet -r requirements.txt && python setup.py install
