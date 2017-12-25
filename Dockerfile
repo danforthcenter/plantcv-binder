@@ -7,7 +7,7 @@ USER $NB_USER
 RUN pip install --no-cache-dir vdom==0.5
 
 # Install OpenCV with conda
-RUN conda install --quiet --yes --channel conda-forge opencv=3.3.0
+RUN conda install --quiet --yes --channel conda-forge opencv=3.3.0 git
 
 # Clone PlantCV
 WORKDIR $HOME
