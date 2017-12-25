@@ -1,18 +1,18 @@
-FROM danforthcenter/plantcv:binder
+FROM jupyter/base-notebook:db3ee82ad08a
+MAINTAINER PlantCV <ddpsc.plantcv@gmail.com>
 
-ENV NB_USER jovyan
-ENV NB_UID 1000
-ENV HOME /home/${NB_USER}
+USER $NB_USER
 
-RUN adduser --disabled-password \
-    --gecos "Default user" \
-    --uid ${NB_UID} \
-    ${NB_USER}
+# Install Binder requirements
+RUN pip install --no-cache-dir vdom==0.5
 
-# Make sure the contents of our repo are in ${HOME}
-COPY . ${HOME}
-USER root
-RUN chown -R ${NB_UID} ${HOME}
-USER ${NB_USER}
+# Install OpenCV with conda
+RUN conda install --quiet --yes --channel conda-forge opencv=3.3.0
 
-RUN pip install --user --no-cache-dir notebook==5.*
+# Create a PlantCV working directory
+RUN mkdir -p $HOME/plantcv
+ADD . $HOME/plantcv
+WORKDIR $HOME/plantcv
+
+# Install PlantCV Python prerequisites and PlantCV
+RUN pip install --quiet -r requirements.txt && python setup.py install
