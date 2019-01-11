@@ -1,1 +1,2 @@
 plantcv
+opencv-python<4
