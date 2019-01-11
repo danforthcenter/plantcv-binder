@@ -1,9 +1,0 @@
-name: plantcv
-channels:
-  - conda-forge
-  - defaults
-  - bioconda
-dependencies:
-  - python
-  - plantcv
-
