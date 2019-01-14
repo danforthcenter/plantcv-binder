@@ -64,7 +64,7 @@ def copy_notebooks():
         content = nbformat.read(os.path.join(NB_SOURCE_DIR, nb),
                                 as_version=4)
 
-        if nb == 'table_contents.ipynb':
+        if nb == 'index.ipynb':
             # content[0] is the title
             # content[1] is the cover image
             # content[2] is the license
