@@ -54,7 +54,7 @@ def copy_notebooks():
     shutil.copytree(figsource, figdest)
 
     figurelist = os.listdir(abspath_from_here('content', 'figures'))
-    figure_map = {os.path.join('figures', fig) : os.path.join('/PythonDataScienceHandbook/figures', fig)
+    figure_map = {os.path.join('figures', fig): os.path.join('/PythonDataScienceHandbook/figures', fig)
                   for fig in figurelist}
 
     for nb in nblist:
