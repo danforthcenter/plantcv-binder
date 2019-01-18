@@ -1,0 +1,3 @@
+plantcv
+opencv-python<4
+numpy==1.15.1
