@@ -18,7 +18,7 @@ def setup_function():
 # ##########################
 # Tests executing the notebook
 # ##########################
-@pytest.mark.parameterize('notebook', ['index.ipynb'])
+@pytest.mark.parametrize('notebook', ['index.ipynb'])
 def test_notebook(notebook, tmpdir):
     tmp = tmpdir.mkdir('sub')
     # Open the notebook
