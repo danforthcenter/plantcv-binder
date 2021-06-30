@@ -28,4 +28,4 @@ jobs:
             pip install pytest jupyter nbconvert
             pip install -r requirements.txt
         - name: "Build notebooks"
-          run: pytest -v tests/tests.py
+          run: pytest -v tests/test.py
