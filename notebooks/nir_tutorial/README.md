@@ -1,14 +1,14 @@
-# PlantCV VIS Tutorial
+# PlantCV Near-infrared Tutorial
 
-The VIS tutorial shows examples of methods used to analyze a single plant in
-a standard color (RGB) image.
+The near-infrared (NIR) tutorial shows examples of methods used to analyze a
+single plant in NIR image.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/danforthcenter/plantcv-binder/HEAD?filepath=notebooks/vis_tutorial/vis_tutorial.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/danforthcenter/plantcv-binder/HEAD?filepath=notebooks/nir_tutorial/nir_tutorial.ipynb)
 
 ## Tags/keywords
 
-plant shoot, single plant, side-view, RGB, shape analysis, color analysis,
-height analysis
+plant shoot, single plant, side-view, RGB, Near-infrared, shape analysis,
+NIR analysis
 
 ## Citations
 
