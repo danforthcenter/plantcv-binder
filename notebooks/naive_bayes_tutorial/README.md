@@ -16,3 +16,8 @@ Feldman MJ, Gilbert KB, Hodge JG, Hoyer JS, Lin A, Liu S, Lizárraga C, Lorence
 A, Miller M, Platon E, Tessman M, Sax T. 2017. PlantCV v2: Image analysis
 software for high-throughput plant phenotyping. *PeerJ* 5:e4088. DOI:
 [10.7717/peerj.4088](https://doi.org/10.7717/peerj.4088).
+
+Abbasi A, Fahlgren N. 2016. Naïve Bayes pixel-level plant segmentation. In:
+2016 IEEE Western New York Image and Signal Processing Workshop (WNYISPW).
+IEEE, 1–4. DOI:
+[10.1109/WNYIPW.2016.7904790](https://doi.org/10.1109/WNYIPW.2016.7904790).
