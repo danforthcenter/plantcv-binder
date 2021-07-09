@@ -36,7 +36,7 @@ inputs_list = [
     ['notebooks/watershed_segmentation_tutorial', 'segmentation.ipynb']
 ]
 
-@pytest.mark.parametrize('dir,notebook', notebook_list)
+@pytest.mark.parametrize('dir,notebook', inputs_list)
 def test_notebook(notebook, tmpdir):
     tmp = tmpdir.mkdir('sub')
     # Change working directory
