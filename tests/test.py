@@ -4,38 +4,29 @@ import pytest
 import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor
 
-TEST_TMPDIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".cache")
-
-
-# ##########################
-# Tests setup function
-# ##########################
-def setup_function():
-    if not os.path.exists(TEST_TMPDIR):
-        os.mkdir(TEST_TMPDIR)
+project_root = os.getcwd()
+inputs_list = [
+    [project_root, 'index.ipynb'],
+    [os.path.join(project_root, 'notebooks/color_correction_tutorial'), 'color_correct_tutorial.ipynb'],
+    [os.path.join(project_root, 'notebooks/hyperspectral_tutorial'), 'hyperspectral_tutorial.ipynb'],
+    [os.path.join(project_root, 'notebooks/input_output_tutorial'), 'input_output.ipynb'],
+    [os.path.join(project_root, 'notebooks/morphology_tutorial'), 'morphology_tutorial.ipynb'],
+    [os.path.join(project_root, 'notebooks/multi_plant_tutorial'), 'multi_plant_tutorial.ipynb'],
+    [os.path.join(project_root, 'notebooks/naive_bayes_tutorial'), 'machine_learning.ipynb'],
+    [os.path.join(project_root, 'notebooks/nir_tutorial'), 'nir_tutorial.ipynb'],
+    [os.path.join(project_root, 'notebooks/photosynthesis_tutorial'), 'psII_tutorial.ipynb'],
+    [os.path.join(project_root, 'notebooks/roi_tutorial'), 'roi_package.ipynb'],
+    [os.path.join(project_root, 'notebooks/thermal_tutorial'), 'thermal.ipynb'],
+    [os.path.join(project_root, 'notebooks/threshold_tutorial'), 'threshold.ipynb'],
+    [os.path.join(project_root, 'notebooks/vis_nir_tutorial'), 'vis_nir_tutorial.ipynb'],
+    [os.path.join(project_root, 'notebooks/vis_tutorial'), 'vis_tutorial.ipynb'],
+    [os.path.join(project_root, 'notebooks/watershed_segmentation_tutorial'), 'segmentation.ipynb']
+]
 
 
 # ##########################
 # Tests executing the notebook
 # ##########################
-inputs_list = [
-    ['.', 'index.ipynb'],
-    ['notebooks/color_correction_tutorial', 'color_correct_tutorial.ipynb'],
-    ['notebooks/hyperspectral_tutorial', 'hyperspectral_tutorial.ipynb'],
-    ['notebooks/input_output_tutorial', 'input_output.ipynb'],
-    ['notebooks/morphology_tutorial', 'morphology_tutorial.ipynb'],
-    ['notebooks/multi_plant_tutorial', 'multi_plant_tutorial.ipynb'],
-    ['notebooks/naive_bayes_tutorial', 'machine_learning.ipynb'],
-    ['notebooks/nir_tutorial', 'nir_tutorial.ipynb'],
-    ['notebooks/photosynthesis_tutorial', 'psII_tutorial.ipynb'],
-    ['notebooks/roi_tutorial', 'roi_package.ipynb'],
-    ['notebooks/thermal_tutorial', 'thermal.ipynb'],
-    ['notebooks/threshold_tutorial', 'threshold.ipynb'],
-    ['notebooks/vis_nir_tutorial', 'vis_nir_tutorial.ipynb'],
-    ['notebooks/vis_tutorial', 'vis_tutorial.ipynb'],
-    ['notebooks/watershed_segmentation_tutorial', 'segmentation.ipynb']
-]
-
 @pytest.mark.parametrize('dir,notebook', inputs_list)
 def test_notebook(dir, notebook, tmpdir):
     tmp = tmpdir.mkdir('sub')
@@ -47,7 +38,7 @@ def test_notebook(dir, notebook, tmpdir):
 
     # Process the notebook
     ep = ExecutePreprocessor(timeout=600, kernel_name="python3")
-    ep.preprocess(nb, {"metadata": {"path": TEST_TMPDIR}})
+    ep.preprocess(nb, {"metadata": {"path": dir}})
 
     # Save the executed notebook
     out_nb = os.path.join(tmp, "executed_notebook.ipynb")
@@ -55,10 +46,3 @@ def test_notebook(dir, notebook, tmpdir):
         nbformat.write(nb, f)
 
     assert os.path.exists(out_nb)
-
-
-# ##############################
-# Clean up test files
-# ##############################
-def teardown_function():
-    shutil.rmtree(TEST_TMPDIR)
