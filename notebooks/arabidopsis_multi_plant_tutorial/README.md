@@ -1,9 +1,9 @@
-# PlantCV New Multi-Plant Tutorial
+# PlantCV Arabidopsis Multi-Plant Tutorial
 
 The multi-plant tutorial shows examples of methods used to analyze multiple
 plants from a tray individually in a standard color (RGB) image.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/danforthcenter/plantcv-binder.git/HEAD?filepath=notebooks%2Fnew_multi_plant_tutorial%2Fidentifying_objects_multi_plant_images.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/danforthcenter/plantcv-binder.git/HEAD?filepath=notebooks%2Farabidopsis_multiplant_tutorial.ipynb)
 
 ## Tags/keywords
 
