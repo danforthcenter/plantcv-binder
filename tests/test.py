@@ -21,6 +21,7 @@ inputs_list = [
     [os.path.join(project_root, 'notebooks/vis_nir_tutorial'), 'vis_nir_tutorial.ipynb'],
     [os.path.join(project_root, 'notebooks/vis_tutorial'), 'vis_tutorial.ipynb'],
     [os.path.join(project_root, 'notebooks/watershed_segmentation_tutorial'), 'segmentation.ipynb'],
+    [os.path.join(project_root, 'notebooks/new_side_view_morphology_tutorial'), 'morphology_analysis_side_view_workflow.ipynb'],
     [os.path.join(project_root, 'notebooks/aerial_view_morphology_tutorial'), 'morphology_analysis_aerial_view_workflow.ipynb'],
     [os.path.join(project_root, 'notebooks/seed_analysis_tutorial'), 'seed-analysis-workflow.ipynb'],
     [os.path.join(project_root, 'notebooks/visualization_methods'), 'visualization_methods_workflow.ipynb']
