@@ -1,4 +1,4 @@
-# PlantCV Side View Morphology Analysis
+# PlantCV Sorghum Shape and Morphology Analysis
 
 The side view morphology analysis tutorial provides examples of analysis used for side-view 
 images of plants, including shape, leaf angle, and stem/branch analysis
