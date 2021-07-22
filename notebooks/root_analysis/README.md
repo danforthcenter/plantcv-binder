@@ -1,17 +1,21 @@
-# PlantCV Tools for Visualization
+# PlantCV Root Shape and Morphology Analysis
 
-The visualization tutorial provides examples of various PlantCV tools that can be used to
-visualize color and size distribution within images, in order to more efficiently identify
-inputs for various functions used to threshold images and create binary masks.
+The root analysis tutorial provides examples of morphological and shape analyses
+that can be used to analyze simple root systems.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/danforthcenter/plantcv-binder.git/HEAD?filepath=notebooks/visualization_methods/visualization_methods_workflow.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/danforthcenter/plantcv-binder.git/HEAD?filepath=notebooks/root_analysis/root_size_and_shape_tutorial.ipynb)
 
 ## Tags/keywords
 
-plant shoot, single plant, side-view, RGB, colorspaces, thresholding, histogram, pixel 
-intensity distribution, object size distributuion
+roots, morphology, shape analysis, wheat
 
 ## Citations
+
+Bradski, G. (2000). The OpenCV Library. Dr. Dobb;s Journal of Software Tools.
+
+Combining semi-automated image analysis techniques with machine learning algorithms to accelerate large-scale genetic studies
+Jonathan A. Atkinson, Guillaume Lobet, Manuel Noll, Patrick E. Meyer, Marcus Griffiths, Darren M. Wells
+GigaScience, 2017.
 
 Gehan MA, Fahlgren N, Abbasi A, Berry JC, Callen ST, Chavez L, Doust AN,
 Feldman MJ, Gilbert KB, Hodge JG, Hoyer JS, Lin A, Liu S, Lizárraga C, Lorence
