@@ -7,6 +7,7 @@ from nbconvert.preprocessors import ExecutePreprocessor
 project_root = os.getcwd()
 inputs_list = [
     [project_root, 'index.ipynb'],
+    [os.path.join(project_root, 'notebooks/arabidopsis_multi_plant_tutorial'), 'arabidopsis_multiplant_tutorial.ipynb'],
     [os.path.join(project_root, 'notebooks/color_correction_tutorial'), 'color_correct_tutorial.ipynb'],
     [os.path.join(project_root, 'notebooks/hyperspectral_tutorial'), 'hyperspectral_tutorial.ipynb'],
     [os.path.join(project_root, 'notebooks/input_output_tutorial'), 'input_output.ipynb'],
