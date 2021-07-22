@@ -3,7 +3,7 @@
 The root analysis tutorial provides examples of morphological and shape analyses
 that can be used to analyze simple root systems.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/danforthcenter/plantcv-binder.git/HEAD?filepath=notebooks%2Froot_analysis%2Froot_size_and_shape_tutorial.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/danforthcenter/plantcv-binder.git/HEAD?filepath=notebooks/root_analysis/root_size_and_shape_tutorial.ipynb)
 
 ## Tags/keywords
 
