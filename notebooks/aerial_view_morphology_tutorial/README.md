@@ -4,7 +4,7 @@ The aerial view morphology tutorial shows how to create a binary mask to isolate
 material, shape analysis, pseudocoloring gray images, and watershed segmentation to isolate
 leaves.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/danforthcenter/plantcv-binder/HEAD?filepath=notebooks/nir_tutorial/nir_tutorial.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/danforthcenter/plantcv-binder/HEAD?filepath=notebooks/aerial_view_morphology_tutorial/morphology_analysis_aerial_view_workflow.ipynb)
 
 ## Tags/keywords
 
