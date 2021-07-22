@@ -3,7 +3,7 @@
 The photosynthesis tutorial shows examples of methods used to analyze
 fluorescence images for measuring the efficiency of Photosystem II.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/danforthcenter/plantcv-binder/HEAD?filepath=notebooks/photosynthesis/psII_tutorial.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/danforthcenter/plantcv-binder/HEAD?filepath=notebooks/photosynthesis_tutorial/psII_tutorial.ipynb)
 
 ## Tags/keywords
 
