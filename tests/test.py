@@ -26,7 +26,8 @@ inputs_list = [
     [os.path.join(project_root, 'notebooks/aerial_view_morphology_tutorial'), 'morphology_analysis_aerial_view_workflow.ipynb'],
     [os.path.join(project_root, 'notebooks/seed_analysis_tutorial'), 'seed-analysis-workflow.ipynb'],
     [os.path.join(project_root, 'notebooks/visualization_methods'), 'visualization_methods_workflow.ipynb'],
-    [os.path.join(project_root, 'notebooks/new_mask_tutorial'), 'create_binary_mask_tutorial.ipynb']
+    [os.path.join(project_root, 'notebooks/new_mask_tutorial'), 'create_binary_mask_tutorial.ipynb'],
+    [os.path.join(project_root, 'notebooks/rice_analysis'), 'rice_analysis_workflow.ipynb']
 ]
 
 
