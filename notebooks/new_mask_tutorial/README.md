@@ -1,4 +1,4 @@
-# PlantCV Binary Mask Tutorial
+# PlantCV Tools for Thresholding Plant Data
 
 The thresholding tutorial shows examples of different methods used to apply thresholds
 to images to segment them into foreground and background, and how to resolve common issues
