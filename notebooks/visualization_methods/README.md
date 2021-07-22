@@ -4,7 +4,7 @@ The visualization tutorial provides examples of various PlantCV tools that can b
 visualize color and size distribution within images, in order to more efficiently identify
 inputs for various functions used to threshold images and create binary masks.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/danforthcenter/plantcv-binder.git/visualization_methods?filepath=notebooks/visualization_methods/visualization_methods_workflow.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/danforthcenter/plantcv-binder.git/HEAD?filepath=notebooks/visualization_methods/visualization_methods_workflow.ipynb)
 
 ## Tags/keywords
 
