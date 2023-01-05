@@ -2,3 +2,4 @@ plantcv==3.12.1
 opencv-python<4
 numpy
 ipympl
+scikit-image<= 0.18
